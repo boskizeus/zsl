@@ -17,7 +17,7 @@
     echo "Różne";
   }
 
-// dodatkowo sprawdzenie  typu danych
+// dodatkowo sprawdzenie typu danych
   if ($x===$y) {
     echo "identyczne";
   }else{
