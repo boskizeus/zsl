@@ -56,16 +56,16 @@ echo $y; //11
 
 // Zadanie
 $x=1;
-echo $x; //
+echo $x; //1
 $x=$x++;
-echo $x; //
+echo $x; //1
 $x=++$x;
-echo $x; //
+echo $x; //2
 $y=++$x;
-echo $x; //
-echo $y; //
+echo $x; //3
+echo $y; //3
 $y=$x++;
-echo $x; //
-echo $y; //
+echo $x; //4
+echo $y; //3
 
  ?>
