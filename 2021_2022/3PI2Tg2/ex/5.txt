@@ -1,0 +1,14 @@
+Dodaj formularz na stronie 5_1_form.php
+W formularzu mają znajdować się pola: imię, wiek, narodowość
+
+Formularz ma zostać wysłany do drugiej strony (action) metodą "mniej bezpieczną" 5_1_data.php
+
+Na stronie 5_1_data.php wyświetl dane w formacie:
+Imię: ...
+Narodowość: ...
+Wiek: ... lat
+
+Dane pobierz z formularza
+Zamień, aby tylko pierwsze litery były duże a pozostałe małe np. janUSz => Janusz
+
+Wyświetl dane na stronie tylko jeśli będą wszystkie uzupełnione w przeciwnym razie wyświetl komunikat o treści: "Wypełnij wszystkie pola!";
