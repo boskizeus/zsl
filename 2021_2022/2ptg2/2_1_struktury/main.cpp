@@ -2,9 +2,9 @@
 using namespace std;
 
 //definicja struktury 
-struct DataBirthday{
+struct DateBirthday{
 //deklaracja pól struktury
-	unsigned short int dd, mm, rrrr;
+	unsigned short int dd, mm, yyyy;
 };
 
 //definicja klasy
@@ -14,33 +14,42 @@ class Student{
 	int id {};
 	string name {}, surname {};
   //deklaracja w³aœciwoœci typu strukturowego
-	DataBirthday dataBirthday {};	
+	DateBirthday dateBirthday {};	
 	void allShowData();
+	void setData(int id, string name, string surname, DateBirthday dateBirthday);
 }; 
 
 	void Student::allShowData(){
 		cout << "Id: " << id << "\nImiê i nazwisko: "
-				 << name << " " << surname << endl;
+				 << name << " " << surname << endl
+				 << "Data urodzenia: " << dateBirthday.dd << "-"
+			   << dateBirthday.mm << "-" 
+				 << dateBirthday.yyyy<<"r.";
 	}
+	
+	void Student::setData(int id, string name, string surname, DateBirthday dateBirthday){
+		Student::id=id;
+		Student::name=name;
+		Student::surname=surname;
+		Student::dateBirthday=dateBirthday;
+	};
 
 int main(int argc, char** argv) {
 	setlocale(LC_CTYPE, "polish");
 	Student uczen;
 	
-//	uczen.dataBirthday ={11,02,2005};
-	
+	unsigned short int dd, mm, yyyy;
 	cout << "Podaj datê urodzenia: \n";
 	cout << "Dzieñ: ";
-	cin >> uczen.dataBirthday.dd; 
+	cin >> dd; 
 	cout << "Miesi¹c: ";
-	cin >> uczen.dataBirthday.mm;
+	cin >> mm;
 	cout << "Rok: ";
-	cin >> uczen.dataBirthday.rrrr;
+	cin >> yyyy;
 
-	
+	uczen.setData(13, "Janusz", "Kowalski", {dd, mm, yyyy});
 	uczen.allShowData();
-	cout << "Data urodzenia: " << uczen.dataBirthday.dd << "-"
-			 << uczen.dataBirthday.mm << "-" << uczen.dataBirthday.rrrr;
+	
 	
 	return 0;
 }
