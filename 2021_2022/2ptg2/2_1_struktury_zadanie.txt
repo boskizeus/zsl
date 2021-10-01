@@ -1,0 +1,14 @@
+Zdefiniuj klasê ksiêgarnia
+
+Utwórz strtukturê ksi¹¿ka: tytu³, autor, rok wydania, cena, twarda ok³adka, podrêcznik
+
+Dodaj strukturê adres
+
+Dodaj strukturê klient: imiê, nazwisko, data urodzenia, adres
+
+Dodaj dodatkowe pola dla ksiêgarni
+
+Dodaj metody dla ksiêgarni
+
+
+
